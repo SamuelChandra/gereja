@@ -1,0 +1,100 @@
+/* Styling umum */
+.admin-container {
+    max-width: 1100px;
+    margin: auto;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+    background: #fdfdfd;
+}
+
+.admin-title {
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #2e4053;
+}
+
+/* Styling form */
+.admin-form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 20px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+.admin-form input, .admin-form textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.admin-form button {
+    padding: 10px;
+    background: #2980b9;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.admin-form button:hover {
+    background: #1f6690;
+}
+
+/* Styling tabel */
+.admin-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+.admin-table th, .admin-table td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: left;
+}
+
+.admin-table th {
+    background: #2e4053;
+    color: white;
+}
+
+.admin-table tr:nth-child(even) {
+    background: #f2f2f2;
+}
+
+.admin-table tr:hover {
+    background: #ddd;
+}
+
+/* Styling tombol aksi */
+.edit-btn {
+    background: #f39c12;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 3px;
+}
+
+.delete-btn {
+    background: #e74c3c;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 3px;
+}
+
+.edit-btn:hover {
+    background: #d68910;
+}
+
+.delete-btn:hover {
+    background: #c0392b;
+}

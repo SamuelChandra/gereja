@@ -1,0 +1,57 @@
+.donasi-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+}
+
+.donasi-title {
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #2c3e50;
+}
+
+.donasi-description {
+    font-size: 16px;
+    margin-bottom: 20px;
+    color: #555;
+}
+
+.qr-section {
+    margin-top: 20px;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #f8f9fa;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.qr-section img {
+    width: 200px;
+    height: 200px;
+    margin-bottom: 15px;
+    border: 5px solid #ddd;
+    border-radius: 10px;
+}
+
+.bank-info {
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+    margin-top: 10px;
+}
+
+.account-number {
+    font-size: 20px;
+    font-weight: bold;
+    color: #e74c3c;
+    margin-top: 5px;
+}
+
+.note {
+    font-size: 14px;
+    color: #777;
+    margin-top: 15px;
+}

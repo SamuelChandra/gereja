@@ -1,0 +1,81 @@
+/* Styling khusus untuk halaman UMKM Create */
+.umkm-user-create {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Styling untuk judul */
+.umkm-user-create h1 {
+    text-align: center;
+    font-size: 24px;
+    color: #333;
+}
+
+/* Styling untuk form */
+.umkm-user-create form {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Label styling */
+.umkm-user-create label {
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+/* Input dan textarea styling */
+.umkm-user-create input,
+.umkm-user-create textarea {
+    padding: 8px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 100%;
+}
+
+/* Styling untuk file input */
+.umkm-user-create input[type="file"] {
+    border: none;
+}
+
+/* Styling tombol */
+.umkm-user-create button {
+    margin-top: 15px;
+    padding: 10px;
+    background-color: #28a745;
+    color: white;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.umkm-user-create button:hover {
+    background-color: #218838;
+}
+
+/* Styling untuk daftar UMKM */
+.umkm-user-create #umkmList {
+    margin-top: 20px;
+    list-style: none;
+    padding: 0;
+}
+
+.umkm-user-create #umkmList li {
+    background: #fff;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.umkm-user-create #umkmList img {
+    margin-top: 5px;
+    max-width: 100px;
+    border-radius: 5px;
+}

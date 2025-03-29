@@ -1,0 +1,151 @@
+    /* Styling utama untuk halaman daftar jemaat */
+    .jemaat-container {
+        max-width:  100%;
+        overflow-x: auto;
+        padding: 20px;
+        background-color: #ffffff;
+        border-radius: 5px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        margin-left: -30px;
+        display: block;
+    }
+
+    /* Header */
+    .jemaat-title {
+        text-align: center;
+        font-size: 28px;
+        color: #333;
+        margin-bottom: 20px;
+    }
+
+    /* Tombol Tambah Jemaat */
+    .jemaat-btn-add {
+        display: inline-block;
+        margin-bottom: 15px;
+        padding: 8px 12px;
+        font-size: 16px;
+        background-color: #007bff;
+        color: white;
+        border-radius: 5px;
+        text-decoration: none;
+        transition: background 0.3s ease-in-out;
+    }
+
+    .jemaat-btn-add:hover {
+        background-color: #0056b3;
+    }
+
+    /* Styling tabel */
+    .jemaat-table {
+        width: 100%;
+        border-collapse: collapse;
+        table-layout: auto; /* Biarkan tabel menyesuaikan isi */
+        background: white;
+        border-radius: 8px;
+        overflow: hidden;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    }
+    .jemaat-table thead {
+        background-color: #007bff;
+        color: white;
+    }
+
+    .jemaat-table th, .jemaat-table td {
+        padding: 10px;
+        text-align: center;
+        border: 1px solid #dee2e6;
+    }
+
+    .jemaat-table tbody tr:nth-child(even) {
+        background-color: #f2f2f2;
+    }
+
+    /* Header tabel */
+    .jemaat-th {
+        background-color: #007bff; /* Warna biru Bootstrap */
+        color: white;
+        text-align: left;
+        padding: 12px;
+        font-weight: bold;
+        border: 1px solid #ddd;
+        white-space: nowrap;
+    }
+
+    /* Isi tabel */
+    .jemaat-td {
+        text-align: left;
+        padding: 10px;
+        border: 1px solid #ddd;
+        white-space: normal; /* Pastikan teks tidak keluar */
+        word-wrap: break-word;
+        overflow: hidden;
+    }
+
+    /* Teks saat tidak ada data */
+    .jemaat-text-danger {
+        font-weight: bold;
+        color: red;
+    }
+
+    /* Alternating row colors */
+    .jemaat-table tbody tr:nth-child(even) {
+        background-color: #f8f9fa;
+    }
+
+    /* Tombol agar lebih rapi */
+    .jemaat-actions {
+        display: flex;
+        gap: 5px;
+    }
+
+    .jemaat-actions button {
+        font-size: 14px;
+        padding: 5px 10px;
+    }
+
+    /* Tombol aksi */
+    .jemaat-btn-edit, .jemaat-btn-delete {
+        padding: 6px 10px;
+        font-size: 14px;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: transform 0.2s ease-in-out;
+    }
+
+    .jemaat-btn-edit {
+        background-color: #ffc107;
+        color: #000;
+        border: none;
+    }
+
+    .jemaat-btn-edit:hover {
+        background-color: #e0a800;
+        transform: scale(1.05);
+    }
+
+    .jemaat-btn-delete {
+        background-color: #dc3545;
+        color: white;
+        border: none;
+    }
+
+    .jemaat-btn-delete:hover {
+        background-color: #c82333;
+        transform: scale(1.05);
+    }
+
+    /* Responsif untuk layar kecil */
+    @media (max-width: 768px) {
+        .jemaat-table {
+            font-size: 12px;
+        }
+
+        .jemaat-btn-edit, .jemaat-btn-delete {
+            font-size: 12px;
+            padding: 4px 8px;
+        }
+
+        .jemaat-table th, .jemaat-table td {
+            padding: 6px;
+        }
+    }

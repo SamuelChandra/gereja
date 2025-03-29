@@ -1,0 +1,194 @@
+/* Styling khusus untuk homepage */
+.homepage-hero {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+.overlay {
+    background: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+}
+.homepage-title {
+    font-size: 3rem;
+    font-weight: bold;
+    color: white;
+}
+.homepage-subtitle {
+    font-size: 1.5rem;
+    color: rgb(28, 24, 24);
+}
+.homepage-btn {
+    background-color: #fbbf24;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+.homepage-btn:hover {
+    background-color: #f59e0b;
+}
+
+/* Styling section */
+.homepage-section {
+    padding: 60px 20px;
+    text-align: center;
+}
+.homepage-heading {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+.homepage-text {
+    font-size: 1.2rem;
+    color: #555;
+}
+.homepage-link {
+    color: #2563eb;
+    text-decoration: none;
+    font-weight: bold;
+}
+.homepage-link:hover {
+    text-decoration: underline;
+}
+
+/* Styling carousel */
+.carousel {
+    position: relative;
+    width: 80%;
+    margin: 0 auto;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.carousel-inner {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+    width: 100%;
+}
+.carousel-item {
+    min-width: 100%;
+    text-align: center;
+    padding: 20px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+    display: none;
+}
+.carousel-item.active {
+    opacity: 1;
+    display: block;
+}
+.carousel-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+.carousel-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 50%;
+    z-index: 10;
+}
+.carousel-btn.prev {
+    left: 10px;
+}
+.carousel-btn.next {
+    right: 10px;
+}
+
+/* Styling Pendeta Jemaat */
+.pendeta-wrapper {
+    display: flex;
+    justify-content: center; /* Pusatkan semua pendeta */
+    gap: 10px;
+    overflow-x: auto; /* Supaya bisa di-scroll jika terlalu banyak */
+    padding-bottom: 10px;
+    scrollbar-width: thin;
+}
+
+.pendeta-card {
+    flex: 0 0 auto;
+    width: 200px; /* Ukuran tetap */
+    text-align: center;
+    background: white;
+    border-radius: 10px;
+    padding: 15px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+}
+.pendeta-card:hover {
+    transform: translateY(-5px);
+}
+
+.pendeta-img {
+    width: 100%;
+    height: 250px; /* Tinggi tetap supaya seragam */
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.pendeta-name {
+    font-size: 1.1rem;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+/* Wrapper utama untuk statistik */
+.statistik-wrapper {
+    width: 100%; /* Memenuhi layar */
+    background: #f8f9fa; /* Warna latar belakang */
+    padding: 40px 20px;
+    display: flex;
+    justify-content: center;
+}
+
+/* Box utama untuk statistik */
+.statistik-box {
+    width: 90%;
+    max-width: 1200px; /* Batas maksimal agar tetap rapi */
+    background: white;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+/* Style untuk setiap kolom statistik */
+.statistik-item {
+    text-align: center;
+    flex: 1; /* Agar setiap kolom memiliki ukuran yang sama */
+    min-width: 150px;
+    padding: 15px;
+}
+
+/* Angka statistik */
+.statistik-number {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #2563eb; /* Warna biru */
+}
+
+/* Deskripsi statistik */
+.statistik-label {
+    font-size: 1.2rem;
+    color: #555;
+    margin-top: 5px;
+}
